@@ -1,0 +1,29 @@
+<?php
+/* @var \Starlabs\HelloWorld\Block\Hello $block */
+?>
+
+<h3 style="color: green"><?php
+
+    $a = $block->getText();
+    $items = array();
+    foreach($a as $b) {
+        $items[] = $b->getAttributeText('brand');
+
+    }
+    $counts = array_count_values($items);
+
+    // Sort the counts in descending order
+    arsort($counts);
+
+    // Display the results
+    //print_r($counts);
+
+    foreach ($counts as $key => $val) {
+        echo "$key = $val"?><br><?php ;
+    }
+    ?>
+</h3>
+
+
+
+
