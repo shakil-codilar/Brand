@@ -16,13 +16,18 @@
     arsort($counts);
 
     // Display the results
-    //print_r($counts);
+    //print_r($counts); O/P:Array ( [Nike] => 18 [Puma] => 9 [Adidas] => 6 )
 
-    foreach ($counts as $key => $val) {
-        echo "$key = $val"?><br><?php ;
+    foreach ($counts as $key => $val) {//foreach ($counts an array as Nike/Puma/Adidas => 18/9/6
+        echo "$key = $val"?><br><?php ; // Nike=18 <br> Puma=9 <br> Adidas =6
     }
     ?>
 </h3>
+
+
+
+
+
 
 
 
